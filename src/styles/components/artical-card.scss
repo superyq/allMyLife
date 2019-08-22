@@ -1,0 +1,15 @@
+.c-artical-card {
+  .artical-card {
+    &__time {
+      font-size: 12px
+    }
+    &__title {
+      margin: 15px 0 20px 0;
+      font-size: 28px
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+  }
+}
