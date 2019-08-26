@@ -1,0 +1,18 @@
+.c-artical-card-image {
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  .artical-card-image {
+    position: absolute;
+    width: 680px;
+    height: 440px;
+    &__content {
+      margin-top: 20px;
+      padding: 80px;
+      width: 500px;
+      height: 385px;
+      box-sizing: border-box;
+      border: 2px solid #eaeaea;
+    }
+  }
+}

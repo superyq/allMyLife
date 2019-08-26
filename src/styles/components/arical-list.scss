@@ -1,0 +1,25 @@
+.c-artical-list {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  .artical-list {
+    &__box {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 1155px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: calc(100% - 76px);
+        background: #ececec;
+        left: 50%;
+      }
+    }
+    &__more {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0
+    }
+  }
+}

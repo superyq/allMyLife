@@ -3,6 +3,8 @@
 
 // pages
 @import "./pages/home.scss";
+@import "./pages/cate.scss";
+@import "./pages/artical.scss";
 
 // global
 @import "./global/utils.scss";
@@ -11,4 +13,10 @@
 
 // components
 @import "./components/svg-icon.scss";
+@import "./components/arical-list.scss";
 @import "./components/artical-card.scss";
+@import "./components/artical-card-image.scss";
+
+// layout
+@import "./layout/layout.scss";
+@import "./layout/header.scss";

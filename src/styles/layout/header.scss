@@ -1,0 +1,35 @@
+header {
+  overflow: hidden;
+  a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  svg {
+    color: #fff;
+  }
+  ul {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    float: right;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    li {
+      float: left;
+      margin-right: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        color: #78a5f1;
+      }
+    }
+  }
+}

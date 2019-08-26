@@ -5,3 +5,10 @@
 .f-r {
   float: right !important;
 }
+
+.u-image-box {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

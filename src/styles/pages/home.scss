@@ -2,30 +2,24 @@
   position: relative;
   height: 100vh;
 
-  background: url("~@/assets/7.jpg");
+  background: url("~@/assets/6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   transition: all 0.3s ease;
 
   &__top {
     position: absolute;
     box-sizing: border-box;
-    padding: 10vh 10% 0 10%;
+    padding: 10vh 10% 0 3%;
     z-index: 999;
     width: 100%;
-    header {
-      overflow: hidden;
-      a {
-        font-size: 24px;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
   }
   &__artical {
     margin-top: 30%;
+    padding-left: 100px;
   }
   // 遮罩层
   &__mask {
