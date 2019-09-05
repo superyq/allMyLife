@@ -4,3 +4,21 @@
   height: 20px;
   fill: currentColor;
 }
+
+// user-box
+.c-userbox {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  &__avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    margin-right: 0.5em;
+  }
+  &__name {
+    font-size: 12px;
+  }
+}

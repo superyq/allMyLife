@@ -10,3 +10,12 @@ ul li {
 body {
   background: #f4f5f5;
 }
+
+a {
+  text-decoration: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

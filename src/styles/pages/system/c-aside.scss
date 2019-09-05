@@ -1,0 +1,136 @@
+.c-aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: $--aside-zindex;
+  width: $--aside-width;
+  background: $--aside-background-color;
+
+  &__hd {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: $--header-height;
+    line-height: $--header-height;
+    text-align: center;
+
+    // 从父级继承background颜色
+    background-color: inherit;
+    .c-brand {
+      display: block;
+      margin: 0;
+      color: $--color-white;
+
+      &:hover {
+        // 变亮模式
+        background-color: lighten($--aside-background-color, 20%);
+      }
+
+      &--sm {
+        display: none;
+      }
+    }
+  }
+
+  &__tool {
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: $--aside-width - 20px;
+    width: 20px;
+    height: 50px;
+    margin-top: -25px;
+    z-index: 3;
+    transition: all .2s ease;
+
+    &-bg {
+      box-sizing: border-box;
+      width: 0;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: 9px solid transparent;
+      border-right: 13px solid #d9dee4;
+      border-top: 9px solid transparent;
+      transition: all .2s ease;
+    }
+
+    &-btn {
+      cursor: pointer;
+      height: 50px;
+      position: relative;
+      right: -7px;
+      text-align: center;
+      line-height: 50px;
+      transition: all .2s ease;
+
+      .svg-icon {
+        font-size: 15px;
+        vertical-align: text-top;
+      }
+    }
+
+    &:hover &-bg {
+      border-bottom: 8px solid transparent;
+      border-right: 20px solid #d9dee4;
+      border-top: 8px solid transparent;
+    }
+
+    &:hover &-btn {
+      left: 0;
+    }
+  }
+
+  &__bd {
+    margin-top: $--header-height;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.c-aside__menu {
+  border-right: 0;
+  width: $--aside-width;
+  color: $--color-white;
+
+  &,
+  .el-menu {
+    background-color: $--aside-background-color;
+  }
+
+  &-wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: content-box;
+
+    width: 100%;
+    height: calc(100% - #{$--header-height});
+    padding-right: 20px;
+  }
+
+  .el-menu-item,
+  .el-submenu__title {
+    color: $--color-white;
+    background-color: transparent;
+    &:hover {
+      background-color: #666;
+    }
+    i {
+      color: $--color-white;
+    }
+  }
+
+  .el-menu-item.is-active {
+    background: #666;
+  }
+
+  .el-submenu.is-active:not(.is-opened) .el-submenu__title {
+    background-color: #666;
+  }
+}

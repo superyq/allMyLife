@@ -1,0 +1,92 @@
+.c-tabs {
+  position: fixed;
+  top: $--header-height;
+  left: $--aside-width;
+  right: 0;
+  z-index: $--header-zindex;
+  padding: 0 ($--tabs-tool-width + $--tabs-refresh-width + 15px) 0 0;
+  border-bottom: $--border-base;
+  background-color: $--header-background-color;
+
+  &__tool,
+  &__refresh {
+    position: absolute;
+    top: 0;
+    z-index: $--header-zindex + 2;
+    height: $--tabs-header-height;
+    line-height: $--tabs-header-height;
+    cursor: pointer;
+    transition: right 0.3s;
+  }
+
+  &__tool {
+    right: 0;
+    width: $--tabs-tool-width;
+    height:  $--tabs-header-height - 1;
+    text-align: center;
+    background-color: $--background-color-base;
+  }
+
+  &__refresh {
+    right: $--tabs-tool-width;
+  }
+
+  .el-tabs__header {
+    margin: 0;
+  }
+
+  .el-tabs__nav-wrap::after {
+    display: none;
+  }
+
+  // 标签页超过容器宽度时 前翻/后翻按钮 垂直居中
+  .el-tabs__nav-next,
+  .el-tabs__nav-prev {
+    line-height: $--tabs-header-height;
+  }
+
+  // 移除激活时的默认下划线
+  .el-tabs__active-bar {
+    display: none;
+  }
+
+  // 激活状态
+  .el-tabs__item {
+    padding: 0 15px !important;
+    height: $--tabs-header-height;
+    line-height: $--tabs-header-height;
+    color: $--color-text-regular;
+    vertical-align: inherit;
+    transition: background-color 0.3s;
+
+    &:hover {
+      color: $--color-primary;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $--color-primary;
+      transition: left 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+        width 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &.is-active {
+      color: $--color-primary;
+      background-color: rgba($--background-color-base, 0.9);
+      &:after {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    height: $--tabs-header-height;
+  }
+}

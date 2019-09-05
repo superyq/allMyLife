@@ -1,0 +1,43 @@
+// Color
+$--color-white: #fff;
+
+// Aside
+$--aside-width: 180px;
+$--aside-zindex: 1020;
+$--aside-width-fold: 64px;
+$--aside-background-color: #444;
+
+// Header
+$--header-zindex: 1020;
+$--header-height: 40px;
+$--header-background-color: rgba($--color-white, 0.9);
+
+/* Wrapper
+-------------------------- */
+$--wrapper-min-width: 810px;
+$--background-color-base: #F5F7FA;
+
+/* Footer
+-------------------------- */
+$--footer-zindex: 1010;
+$--footer-height: 54px;
+
+/* Main
+-------------------------- */
+$--main-zindex: 1010;
+$--main-content-padding: 20px;
+
+// boder
+$--border-base: 1px solid #dcdfe6;
+
+// Tabs
+$--tabs-header-height: 40px;
+$--tabs-tool-width: 40px;
+$--tabs-refresh-width: 120px;
+
+/// color|1|Font Color|2
+$--color-text-regular: #5F656F !default;
+
+/* Color
+-------------------------- */
+$--color-primary: #007dfd;

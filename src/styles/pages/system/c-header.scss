@@ -1,0 +1,14 @@
+.c-header {
+  position: fixed;
+  top: 0;
+  left: $--aside-width;
+  bottom: 0;
+  right: 0;
+  z-index: $--header-zindex;
+  padding: 0 $--main-content-padding;
+  border-bottom: $--border-base;
+  width: auto;
+  height: $--header-height;
+  line-height: $--header-height;
+  background-color: $--header-background-color;
+}

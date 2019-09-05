@@ -20,6 +20,46 @@ const routes = [
       }
     ]
   },
+  {
+    path: "/system",
+    name: "system",
+    meta: {
+      isSystem: true
+    },
+    component: () => import("@/views/system"),
+    children: [
+      {
+        path: "/system/echarts",
+        name: "echarts",
+        component: () => import("@/views/echarts"),
+        meta: {
+          isSystem: true,
+          isTab: true,
+          title: '图形'
+        }
+      },
+      {
+        path: "/system/aa",
+        name: "aa",
+        component: () => import("@/views/aa"),
+        meta: {
+          isSystem: true,
+          isTab: true,
+          title: 'aa'
+        }
+      },
+      {
+        path: "/system/bb",
+        name: "bb",
+        component: () => import("@/views/bb"),
+        meta: {
+          isSystem: true,
+          isTab: true,
+          title: 'bb'
+        }
+      }
+    ]
+  },
   { path: "*", component: () => import("@/views/home") }
 ];
 

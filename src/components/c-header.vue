@@ -11,6 +11,7 @@
 
     ul(:style='{ width: width }')
       li(@click='go("cate")') 文章分类
+      li(@click='go("system")') 后台结构
 </template>
 
 <script>
@@ -24,7 +25,7 @@ export default {
   methods: {
     toggleMenu() {
       const { width } = this;
-      this.width = width ? 0 : "90px";
+      this.width = width ? 0 : "170px";
     },
     go(path) {
       const { name } = this.$route;

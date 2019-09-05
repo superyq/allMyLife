@@ -1,0 +1,15 @@
+.c-user {
+  &__warpper {
+    position: fixed;
+    top: 300px;
+    border: 1px solid;
+    width: 200px;
+    padding: 20px 0;
+  }
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}
