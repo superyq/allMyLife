@@ -23,7 +23,7 @@
 
 <script>
 import { mapState, mapMutations } from "vuex";
-import { asideMenuList, dynamicMenuRoutes } from "@/datas/menu.js";
+import { asideMenuList } from "@/datas/menu.js";
 import CMenuItem from "./c-menu-item";
 
 export default {
@@ -38,8 +38,7 @@ export default {
   },
   data() {
     return {
-      asideMenuList,
-      dynamicMenuRoutes
+      asideMenuList
     };
   },
   computed: {
@@ -48,16 +47,8 @@ export default {
   methods: {
     ...mapMutations("system", ["updateAsideFold"]),
     gotoRouteHandle(menu) {
-      const route = this.dynamicMenuRoutes.filter(
-        item => item.meta.id === menu.id
-      );
-
-      route.length
-        ? this.$router.push({ name: route[0].name })
-        : this.$alert(
-            `未匹配到路由地址(${menu.name}[${menu.url}]), 请联系开发人员`,
-            "提示"
-          ).catch(() => {});
+      const { name = 'home' } = menu;
+      this.$router.push({ name });
     }
   }
 };

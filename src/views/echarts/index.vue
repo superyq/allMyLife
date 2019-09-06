@@ -1,5 +1,5 @@
 <template lang="pug">
-  .p-echarts echarts
+  .p-echarts(style='height: 1000px;') echarts
 </template>
 
 <script>
