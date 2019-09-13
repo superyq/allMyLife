@@ -16,6 +16,9 @@ Vue.use(myComponents);
 Vue.config.productionTip = false;
 Vue.prototype.$config = config;
 
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+
 new Vue({
   store,
   router,

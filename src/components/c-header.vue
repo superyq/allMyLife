@@ -1,6 +1,6 @@
 <template lang="pug">
   header
-    router-link.f-l(to='/home') 人生 · 若只如初见
+    router-link.f-l(to='/artical-list') 人生 · 若只如初见
     svg-icon.f-r(
       name='menu',
       width='30px',

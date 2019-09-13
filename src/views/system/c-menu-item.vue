@@ -37,7 +37,7 @@ export default {
     },
     subMenus() {
       const { list = [] } = this.menu;
-      return (list && list.filter(m => m.show && m.compiled)) || [];
+      return list || [];
     }
   }
 };

@@ -4,6 +4,8 @@
   min-height: 500px;
   margin: $--main-content-padding;
   margin-bottom: 0;
+  // background: $--main-background;
+  border-radius: $--main-border-radius;
 
   &__iframe {
     position: fixed;

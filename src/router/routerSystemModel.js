@@ -11,13 +11,17 @@ export default class systemModel {
   };
 
   constructor(opts = {}) {
-    const { name, title } = opts;
+    const { name, title, upper = "" } = opts;
 
-    this.path = `/system/${name}`;
     this.name = name;
     this.meta.title = title || name;
 
-    this.component = () => import(`@/views/${name}`);
+    if (upper) {
+      this.path = `/system/${upper}/${name}`;
+      this.component = () => import(`@/views/${upper}/${name}`);
+    } else {
+      this.path = `/system/${name}`;
+      this.component = () => import(`@/views/${name}`);
+    }
   }
 }
-

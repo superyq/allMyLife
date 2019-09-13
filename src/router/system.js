@@ -3,12 +3,21 @@ import systemModel from "./routerSystemModel";
 
 let system = [];
 
-for (let i = 0; i < asideMenuList.length; i++) {
-  const item = asideMenuList[i];
+function loopMenu(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    const item = arr[i];
 
-  let obj = new systemModel(item);
+    const { list = [], type } = item;
 
-  system.push(obj);
+    if (list.length && !type) {
+      loopMenu(list);
+    } else {
+      let obj = new systemModel(item);
+      system.push(obj);
+    }
+  }
 }
+
+loopMenu(asideMenuList);
 
 export default system;

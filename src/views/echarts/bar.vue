@@ -1,9 +1,9 @@
 <template lang="pug">
-  .p-echarts(style='height: 1000px;') echarts
+  .p-bar bar
 </template>
 
 <script>
 export default {
-  name: "echarts"
-};
+  name: 'PBar'
+}
 </script>

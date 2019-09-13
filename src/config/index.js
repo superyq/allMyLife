@@ -6,7 +6,7 @@ export const SESSION_TOKEN = "imeet-admin-token";
 /**
  * @description Router
  */
-export const ROUTE_HOME = "home";
+export const ROUTE_HOME = "artical-list";
 export const ROUTE_LOGIN = "login";
 export const ROUTE_DYNAMIC_MARK = "hasDynamic";
 

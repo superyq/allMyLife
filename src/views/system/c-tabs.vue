@@ -13,7 +13,7 @@
           el-dropdown-item(@click.native="tabsCloseAllHandle()") 关闭全部标签页
 
       el-tabs(v-model='mainTabsActive', @tab-click='selectedTabHandle', @tab-remove='removeTabHandle')
-        el-tab-pane(:lazy='true', :closeable='false', name='home', lable='首页')
+        el-tab-pane(:lazy='true', :closeable='false', name='artical-list', lable='首页')
           svg-icon(name='home', slot='label')
         el-tab-pane(
           v-for="item in mainTabs",
@@ -83,8 +83,8 @@ export default {
       }
     },
     selectedTabHandle(tab) {
-      if (tab.name === "home") {
-        return this.$router.push({ name: "home" });
+      if (tab.name === "artical-list") {
+        return this.$router.push({ name: "artical-list" });
       }
       tab = this.mainTabs.filter(item => item.name === tab.name);
       if (tab.length) {

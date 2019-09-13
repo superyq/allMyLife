@@ -1,13 +1,11 @@
 // variables
 @import "./variables.scss";
 
-// media
-@import "./media/home.scss";
-
 // pages
 @import "./pages/home.scss";
 @import "./pages/cate.scss";
 @import "./pages/artical.scss";
+@import "./pages/echarts.scss";
 @import "./pages/system/index.scss";
 
 // global
@@ -21,8 +19,13 @@
 @import "./components/user-card.scss";
 @import "./components/arical-list.scss";
 @import "./components/artical-card.scss";
+@import "./components/echarts-card.scss";
 @import "./components/artical-card-image.scss";
 
 // layout
 @import "./layout/layout.scss";
 @import "./layout/header.scss";
+
+// media
+@import "./media/home.scss";
+@import "./media/echarts.scss";

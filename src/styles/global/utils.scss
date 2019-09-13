@@ -6,9 +6,19 @@
   float: right !important;
 }
 
+// 图片盒子
 .u-image-box {
   img {
     width: 100%;
     object-fit: cover;
   }
+}
+
+// 三角形
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color:transparent transparent #52c41aa5;
 }
