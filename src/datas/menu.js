@@ -33,5 +33,20 @@ export const asideMenuList = [
     type: 1,
     name: 'excelDown',
     title: 'excel下载'
+  },
+  {
+    id: 5,
+    type: 0,
+    name: 'newsFeat',
+    title: '测试新功能',
+    list: [
+      {
+        id: 6,
+        type: 1,
+        name: 'direction',
+        title: '指令',
+        upper: 'newsFeat'
+      }
+    ]
   }
 ];
