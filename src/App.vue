@@ -1,6 +1,6 @@
 <template lang='pug'>
   #app
-    c-user-card(v-if='!isSystem')
+    //- c-user-card(v-if='!isSystem')
     transition(name='fade')
       router-view
 </template>

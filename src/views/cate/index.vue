@@ -1,7 +1,7 @@
 <template lang="pug">
   .p-cate
     .p-cate__box
-      cate-card(v-for='item in items', :key='item.id',, :item='item')
+      cate-card(v-for='item in items', :key='item.id', :item='item')
 </template>
 
 <script>

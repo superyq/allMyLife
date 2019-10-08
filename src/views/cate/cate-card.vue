@@ -1,16 +1,19 @@
 <template lang='pug'>
   .cate-card(@click='goArtical')
-    .cate-card__top
-      .cate-card__img-box
-        img
-      .cate-card__img-remark
-      p
-    label  {{ item.title }}
+    .cate-card__img
+      img(:src='img')
+      .cate-card__img-mark 哇哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+
+    .cate-card__content
+      .cate-card__content-title
+      .cate-card__content-meta
 </template>
 
 <script>
+import img from "@/assets/6.jpg";
+
 export default {
-  name: "cateCard",
+  name: "cate-card",
   props: {
     item: {
       type: Object,
@@ -18,7 +21,9 @@ export default {
     }
   },
   data() {
-    return {};
+    return {
+      img
+    };
   },
   methods: {
     goArtical() {
