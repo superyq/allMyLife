@@ -2,6 +2,7 @@
   .p-cate
     .p-cate__box
       cate-card(v-for='item in items', :key='item.id', :item='item')
+
 </template>
 
 <script>
@@ -15,17 +16,18 @@ export default {
       items: [
         {
           id: 1,
-          title: '文章1'
+          title: "文章1"
         },
         {
           id: 2,
-          title: '文章2'
+          title: "文章2"
         }
       ]
     };
   },
   components: {
     cateCard
-  }
+  },
+  methods: {}
 };
 </script>

@@ -5,7 +5,9 @@ function resolve(dir) {
 }
 
 module.exports = {
-  lintOnSave: true,
+  devServer: {
+    proxy: 'http://xbaa.free.idcfengye.com'
+  },
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', resolve('src'))

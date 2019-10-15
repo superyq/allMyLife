@@ -16,8 +16,11 @@ Vue.use(myComponents);
 Vue.config.productionTip = false;
 Vue.prototype.$config = config;
 
-import echarts from 'echarts'
-Vue.prototype.$echarts = echarts
+import echarts from "echarts";
+Vue.prototype.$echarts = echarts;
+
+import test from "@/directives";
+Vue.use(test);
 
 new Vue({
   store,
