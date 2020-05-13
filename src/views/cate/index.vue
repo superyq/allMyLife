@@ -2,11 +2,12 @@
   .p-cate
     .p-cate__box
       cate-card(v-for='item in items', :key='item.id', :item='item')
-
+      tiny-mce
 </template>
 
 <script>
 import cateCard from "./cate-card.vue";
+import tinyMce from "./Tinymce/index";
 
 export default {
   name: "PCate",
@@ -26,7 +27,8 @@ export default {
     };
   },
   components: {
-    cateCard
+    cateCard,
+    tinyMce
   },
   methods: {}
 };
